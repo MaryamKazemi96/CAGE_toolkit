@@ -1,0 +1,48 @@
+{
+  "source_frame": "ROS map",
+  "target_frame": "OptiTrack horizontal x/y",
+  "method": "robust similarity fit on time-validated Robot02 delivery trajectories",
+  "matrix": [
+    [
+      -0.9895740716125629,
+      -0.1440248478288873
+    ],
+    [
+      -0.14402484782888725,
+      0.9895740716125629
+    ]
+  ],
+  "translation_m": [
+    -2.3395222339941206,
+    -0.08146282655627657
+  ],
+  "scale": 1.0338463365841015,
+  "reflection": true,
+  "global_validation": [
+    {
+      "session": 2,
+      "scenario": 4,
+      "inlier_fraction": 0.7389033942558747,
+      "rms_inlier_error_m": 0.1508127973936269,
+      "median_inlier_error_m": 0.12778502827183427,
+      "rms_all_pose_error_m": 1.4884789282344382
+    },
+    {
+      "session": 3,
+      "scenario": 3,
+      "inlier_fraction": 0.9161676646706587,
+      "rms_inlier_error_m": 0.15888972386493025,
+      "median_inlier_error_m": 0.1514891411011825,
+      "rms_all_pose_error_m": 0.1810729531906899
+    },
+    {
+      "session": 4,
+      "scenario": 3,
+      "inlier_fraction": 0.917910447761194,
+      "rms_inlier_error_m": 0.13547007249556361,
+      "median_inlier_error_m": 0.1126588263940257,
+      "rms_all_pose_error_m": 0.250001490642049
+    }
+  ],
+  "warning": "Use globally only if per-recording validation errors are acceptably small."
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cage-toolkit"
+version = "0.1.0"
+description = "Metadata-driven access, plotting, and analysis tools for the CAGE dataset"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "pandas>=1.5", "PyYAML>=6.0", "matplotlib>=3.6", "scipy>=1.9"]
+
+[project.optional-dependencies]
+ros = ["rclpy", "geometry_msgs"]
+
+[project.scripts]
+cage = "cage_toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cage_toolkit*"]

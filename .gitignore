@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Runtime outputs. Keep the released spatial-alignment inputs below.
+results/*
+!results/spatial_alignment/
+results/spatial_alignment/*
+!results/spatial_alignment/ros_map_to_optitrack_transform.json
+!results/spatial_alignment/global_transform_validation.csv

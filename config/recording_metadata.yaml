@@ -1,0 +1,3946 @@
+schema_version: 2
+generated_utc: '2026-10-14T13:17:46+00:00'
+coordinate_convention:
+  horizontal_axes: OptiTrack x/y after original y/z swap
+  vertical_axis: z
+map:
+  semantic_image: data/figures/env.png
+  extent_m:
+  - -4.6
+  - 6.282
+  - -3.192
+  - 3.058
+  station_regions:
+    A:
+      x_m: -2.229999999999998
+      y_m: -0.6399999999999985
+      p90_radius_m: 1.866447776479789
+      n_clicks: 916
+    B:
+      x_m: 1.0800000000000014
+      y_m: -2.609999999999998
+      p90_radius_m: 2.581898188465857
+      n_clicks: 790
+    C:
+      x_m: 0.6300000000000014
+      y_m: 2.200000000000001
+      p90_radius_m: 1.0129663235893878
+      n_clicks: 800
+    D:
+      x_m: 3.1100000000000008
+      y_m: 0.2280000000000016
+      p90_radius_m: 1.306348038328974
+      n_clicks: 814
+    E:
+      x_m: -1.8599999999999983
+      y_m: 2.0900000000000016
+      p90_radius_m: 1.7007396392700032
+      n_clicks: 828
+spatial_alignment:
+  transform_path: results/spatial_alignment/ros_map_to_optitrack_transform.json
+  validation_path: results/spatial_alignment/global_transform_validation.csv
+recordings:
+  s1_scenario1:
+    session: 1
+    scenario: 1
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 441
+        end_frame: 34725
+        start_s: 3.675
+        end_s: 289.375
+      RigidBody02:
+        start_frame: 1253
+        end_frame: 39693
+        start_s: 10.441667
+        end_s: 330.775
+      RigidBody03:
+        start_frame: 2136
+        end_frame: 30413
+        start_s: 17.8
+        end_s: 253.441667
+      RigidBody04:
+        start_frame: 2926
+        end_frame: 37299
+        start_s: 24.383333
+        end_s: 310.825
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 1/Take 2026-05-19 03.07.52 PM-1.csv
+        take_name: Take 2026-05-19 03.07.52 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 40279
+        duration_s: 335.65
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 441
+            end_frame: 34725
+            start_s: 3.675
+            end_s: 289.375
+          RigidBody02:
+            start_frame: 1253
+            end_frame: 39693
+            start_s: 10.441667
+            end_s: 330.775
+          RigidBody03:
+            start_frame: 2136
+            end_frame: 30413
+            start_s: 17.8
+            end_s: 253.441667
+          RigidBody04:
+            start_frame: 2926
+            end_frame: 37299
+            start_s: 24.383333
+            end_s: 310.825
+      solved:
+        path: data/OptiTrack/solved/session 1/Take 2026-05-19 03.07.52 PM-1.csv
+        take_name: Take 2026-05-19 03.07.52 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 40279
+        duration_s: 335.65
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 441
+            end_frame: 30339
+            start_s: 3.675
+            end_s: 252.825
+          RigidBody02:
+            start_frame: 1253
+            end_frame: 39693
+            start_s: 10.441667
+            end_s: 330.775
+          RigidBody03:
+            start_frame: 0
+            end_frame: 31422
+            start_s: 0.0
+            end_s: 261.85
+          RigidBody04:
+            start_frame: 0
+            end_frame: 35622
+            start_s: 0.0
+            end_s: 296.85
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-19T15:07:52+03:00'
+        goal_file: data/goals/session 1/scenario 1.csv
+  s1_scenario2:
+    session: 1
+    scenario: 2
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 364
+        end_frame: 34468
+        start_s: 3.033333
+        end_s: 287.233333
+      RigidBody02:
+        start_frame: 1191
+        end_frame: 38236
+        start_s: 9.925
+        end_s: 318.633333
+      RigidBody03:
+        start_frame: 2974
+        end_frame: 37451
+        start_s: 24.783333
+        end_s: 312.091667
+      RigidBody04:
+        start_frame: 2430
+        end_frame: 34336
+        start_s: 20.25
+        end_s: 286.133333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 1/Take 2026-05-19 03.15.55 PM-2.csv
+        take_name: Take 2026-05-19 03.15.55 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 39506
+        duration_s: 329.2083333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 364
+            end_frame: 34468
+            start_s: 3.033333
+            end_s: 287.233333
+          RigidBody02:
+            start_frame: 1191
+            end_frame: 38236
+            start_s: 9.925
+            end_s: 318.633333
+          RigidBody03:
+            start_frame: 2974
+            end_frame: 37451
+            start_s: 24.783333
+            end_s: 312.091667
+          RigidBody04:
+            start_frame: 2430
+            end_frame: 34336
+            start_s: 20.25
+            end_s: 286.133333
+      solved:
+        path: data/OptiTrack/solved/session 1/Take 2026-05-19 03.15.55 PM-2.csv
+        take_name: Take 2026-05-19 03.15.55 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 39506
+        duration_s: 329.2083333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 364
+            end_frame: 31623
+            start_s: 3.033333
+            end_s: 263.525
+          RigidBody02:
+            start_frame: 0
+            end_frame: 38320
+            start_s: 0.0
+            end_s: 319.333333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 37472
+            start_s: 0.0
+            end_s: 312.266667
+          RigidBody04:
+            start_frame: 0
+            end_frame: 34632
+            start_s: 0.0
+            end_s: 288.6
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-19T15:15:55+03:00'
+        goal_file: data/goals/session 1/scenario 2.csv
+  s1_scenario3:
+    session: 1
+    scenario: 3
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 1350
+        end_frame: 39532
+        start_s: 11.25
+        end_s: 329.433333
+      RigidBody02:
+        start_frame: 1555
+        end_frame: 51247
+        start_s: 12.958333
+        end_s: 427.058333
+      RigidBody03:
+        start_frame: 3336
+        end_frame: 37796
+        start_s: 27.8
+        end_s: 314.966667
+      RigidBody04:
+        start_frame: 1426
+        end_frame: 39477
+        start_s: 11.883333
+        end_s: 328.975
+      Robot01:
+        start_frame: 9
+        end_frame: 44145
+        start_s: 0.075
+        end_s: 367.875
+      Robot02:
+        start_frame: 10
+        end_frame: 51360
+        start_s: 0.083333
+        end_s: 428.0
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 1/Take 2026-05-19 03.25.24 PM-3.csv
+        take_name: Take 2026-05-19 03.25.24 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 51361
+        duration_s: 428.0
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1350
+            end_frame: 39532
+            start_s: 11.25
+            end_s: 329.433333
+          RigidBody02:
+            start_frame: 1555
+            end_frame: 51247
+            start_s: 12.958333
+            end_s: 427.058333
+          RigidBody03:
+            start_frame: 3336
+            end_frame: 37796
+            start_s: 27.8
+            end_s: 314.966667
+          RigidBody04:
+            start_frame: 1426
+            end_frame: 39477
+            start_s: 11.883333
+            end_s: 328.975
+          Robot01:
+            start_frame: 9
+            end_frame: 44145
+            start_s: 0.075
+            end_s: 367.875
+          Robot02:
+            start_frame: 10
+            end_frame: 51360
+            start_s: 0.083333
+            end_s: 428.0
+      solved:
+        path: data/OptiTrack/solved/session 1/Take 2026-05-19 03.25.24 PM-3.csv
+        take_name: Take 2026-05-19 03.25.24 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 51361
+        duration_s: 428.0
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 31132
+            start_s: 0.0
+            end_s: 259.433333
+          RigidBody02:
+            start_frame: 1555
+            end_frame: 30852
+            start_s: 12.958333
+            end_s: 257.1
+          RigidBody03:
+            start_frame: 0
+            end_frame: 37824
+            start_s: 0.0
+            end_s: 315.2
+          RigidBody04:
+            start_frame: 0
+            end_frame: 39616
+            start_s: 0.0
+            end_s: 330.133333
+          Robot01:
+            start_frame: 0
+            end_frame: 51360
+            start_s: 0.0
+            end_s: 428.0
+          Robot02:
+            start_frame: 0
+            end_frame: 51360
+            start_s: 0.0
+            end_s: 428.0
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-19T15:25:24+03:00'
+        goal_file: data/goals/session 1/scenario 3.csv
+  s1_scenario4:
+    session: 1
+    scenario: 4
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2091
+        end_frame: 27585
+        start_s: 17.425
+        end_s: 229.875
+      RigidBody02:
+        start_frame: 802
+        end_frame: 22668
+        start_s: 6.683333
+        end_s: 188.9
+      RigidBody03:
+        start_frame: 2826
+        end_frame: 28316
+        start_s: 23.55
+        end_s: 235.966667
+      RigidBody04:
+        start_frame: 1011
+        end_frame: 28020
+        start_s: 8.425
+        end_s: 233.5
+      Robot01:
+        start_frame: 9
+        end_frame: 29027
+        start_s: 0.075
+        end_s: 241.891667
+      Robot02:
+        start_frame: 7
+        end_frame: 29027
+        start_s: 0.058333
+        end_s: 241.891667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 1/Take 2026-05-19 03.41.58 PM-4.csv
+        take_name: Take 2026-05-19 03.41.58 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 29028
+        duration_s: 241.89166666666668
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2091
+            end_frame: 27585
+            start_s: 17.425
+            end_s: 229.875
+          RigidBody02:
+            start_frame: 802
+            end_frame: 22668
+            start_s: 6.683333
+            end_s: 188.9
+          RigidBody03:
+            start_frame: 2826
+            end_frame: 28316
+            start_s: 23.55
+            end_s: 235.966667
+          RigidBody04:
+            start_frame: 1011
+            end_frame: 28020
+            start_s: 8.425
+            end_s: 233.5
+          Robot01:
+            start_frame: 9
+            end_frame: 29027
+            start_s: 0.075
+            end_s: 241.891667
+          Robot02:
+            start_frame: 7
+            end_frame: 29027
+            start_s: 0.058333
+            end_s: 241.891667
+      solved:
+        path: data/OptiTrack/solved/session 1/Take 2026-05-19 03.41.58 PM-4.csv
+        take_name: Take 2026-05-19 03.41.58 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 29028
+        duration_s: 241.89166666666668
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 27585
+            start_s: 0.0
+            end_s: 229.875
+          RigidBody02:
+            start_frame: 759
+            end_frame: 22668
+            start_s: 6.325
+            end_s: 188.9
+          RigidBody03:
+            start_frame: 2792
+            end_frame: 28316
+            start_s: 23.266667
+            end_s: 235.966667
+          RigidBody04:
+            start_frame: 0
+            end_frame: 28053
+            start_s: 0.0
+            end_s: 233.775
+          Robot01:
+            start_frame: 0
+            end_frame: 29027
+            start_s: 0.0
+            end_s: 241.891667
+          Robot02:
+            start_frame: 0
+            end_frame: 29027
+            start_s: 0.0
+            end_s: 241.891667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-19T15:41:58+03:00'
+        goal_file: data/goals/session 1/scenario 4.csv
+  s2_scenario1:
+    session: 2
+    scenario: 1
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 0
+        end_frame: 54550
+        start_s: 0.0
+        end_s: 454.583333
+      RigidBody02:
+        start_frame: 0
+        end_frame: 54227
+        start_s: 0.0
+        end_s: 451.891667
+      RigidBody03:
+        start_frame: 315
+        end_frame: 47334
+        start_s: 2.625
+        end_s: 394.45
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 2/Take 2026-05-20 02.47.13 PM-1.csv
+        take_name: Take 2026-05-20 02.47.13 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 54551
+        duration_s: 454.5833333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 54550
+            start_s: 0.0
+            end_s: 454.583333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 54227
+            start_s: 0.0
+            end_s: 451.891667
+          RigidBody03:
+            start_frame: 315
+            end_frame: 47334
+            start_s: 2.625
+            end_s: 394.45
+      solved:
+        path: data/OptiTrack/solved/session 2/Take 2026-05-20 02.47.13 PM-1.csv
+        take_name: Take 2026-05-20 02.47.13 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 54551
+        duration_s: 454.5833333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 39779
+            start_s: 0.0
+            end_s: 331.491667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 54227
+            start_s: 0.0
+            end_s: 451.891667
+          RigidBody03:
+            start_frame: 315
+            end_frame: 47334
+            start_s: 2.625
+            end_s: 394.45
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-20T14:47:13+03:00'
+        goal_file: data/goals/session 2/scenario 1.csv
+  s2_scenario2:
+    session: 2
+    scenario: 2
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 1029
+        end_frame: 40452
+        start_s: 8.575
+        end_s: 337.1
+      RigidBody02:
+        start_frame: 228
+        end_frame: 40810
+        start_s: 1.9
+        end_s: 340.083333
+      RigidBody03:
+        start_frame: 1940
+        end_frame: 37705
+        start_s: 16.166667
+        end_s: 314.208333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 2/Take 2026-05-20 03.01.34 PM-2.csv
+        take_name: Take 2026-05-20 03.01.34 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 42268
+        duration_s: 352.225
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1029
+            end_frame: 40452
+            start_s: 8.575
+            end_s: 337.1
+          RigidBody02:
+            start_frame: 228
+            end_frame: 40810
+            start_s: 1.9
+            end_s: 340.083333
+          RigidBody03:
+            start_frame: 1940
+            end_frame: 37705
+            start_s: 16.166667
+            end_s: 314.208333
+      solved:
+        path: data/OptiTrack/solved/session 2/Take 2026-05-20 03.01.34 PM-2.csv
+        take_name: Take 2026-05-20 03.01.34 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 42268
+        duration_s: 352.225
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 40452
+            start_s: 0.0
+            end_s: 337.1
+          RigidBody02:
+            start_frame: 0
+            end_frame: 42267
+            start_s: 0.0
+            end_s: 352.225
+          RigidBody03:
+            start_frame: 0
+            end_frame: 37705
+            start_s: 0.0
+            end_s: 314.208333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-20T15:01:34+03:00'
+        goal_file: data/goals/session 2/scenario 2.csv
+  s2_scenario3:
+    session: 2
+    scenario: 3
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 315
+        end_frame: 53131
+        start_s: 2.625
+        end_s: 442.758333
+      RigidBody02:
+        start_frame: 1967
+        end_frame: 52250
+        start_s: 16.391667
+        end_s: 435.416667
+      RigidBody03:
+        start_frame: 1300
+        end_frame: 48039
+        start_s: 10.833333
+        end_s: 400.325
+      Robot01:
+        start_frame: 11
+        end_frame: 53468
+        start_s: 0.091667
+        end_s: 445.566667
+      Robot02:
+        start_frame: 59
+        end_frame: 53914
+        start_s: 0.491667
+        end_s: 449.283333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 2/Take 2026-05-20 03.21.31 PM-3.csv
+        take_name: Take 2026-05-20 03.21.31 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 53915
+        duration_s: 449.28333333333336
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 315
+            end_frame: 53131
+            start_s: 2.625
+            end_s: 442.758333
+          RigidBody02:
+            start_frame: 1967
+            end_frame: 52250
+            start_s: 16.391667
+            end_s: 435.416667
+          RigidBody03:
+            start_frame: 1300
+            end_frame: 48039
+            start_s: 10.833333
+            end_s: 400.325
+          Robot01:
+            start_frame: 11
+            end_frame: 53468
+            start_s: 0.091667
+            end_s: 445.566667
+          Robot02:
+            start_frame: 59
+            end_frame: 53914
+            start_s: 0.491667
+            end_s: 449.283333
+      solved:
+        path: data/OptiTrack/solved/session 2/Take 2026-05-20 03.21.31 PM-3.csv
+        take_name: Take 2026-05-20 03.21.31 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 53915
+        duration_s: 449.28333333333336
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 315
+            end_frame: 53131
+            start_s: 2.625
+            end_s: 442.758333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 52250
+            start_s: 0.0
+            end_s: 435.416667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 48039
+            start_s: 0.0
+            end_s: 400.325
+          Robot01:
+            start_frame: 0
+            end_frame: 53914
+            start_s: 0.0
+            end_s: 449.283333
+          Robot02:
+            start_frame: 0
+            end_frame: 53914
+            start_s: 0.0
+            end_s: 449.283333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-20T15:21:31+03:00'
+        goal_file: data/goals/session 2/scenario 3.csv
+  s2_scenario4:
+    session: 2
+    scenario: 4
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2449
+        end_frame: 47776
+        start_s: 20.408333
+        end_s: 398.133333
+      RigidBody02:
+        start_frame: 3234
+        end_frame: 39029
+        start_s: 26.95
+        end_s: 325.241667
+      RigidBody03:
+        start_frame: 1375
+        end_frame: 55041
+        start_s: 11.458333
+        end_s: 458.675
+      Robot01:
+        start_frame: 11
+        end_frame: 55238
+        start_s: 0.091667
+        end_s: 460.316667
+      Robot02:
+        start_frame: 10
+        end_frame: 55474
+        start_s: 0.083333
+        end_s: 462.283333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 2/Take 2026-05-20 03.35.00 PM-4.csv
+        take_name: Take 2026-05-20 03.35.00 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 55475
+        duration_s: 462.28333333333336
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2449
+            end_frame: 47776
+            start_s: 20.408333
+            end_s: 398.133333
+          RigidBody02:
+            start_frame: 3234
+            end_frame: 39029
+            start_s: 26.95
+            end_s: 325.241667
+          RigidBody03:
+            start_frame: 1375
+            end_frame: 55041
+            start_s: 11.458333
+            end_s: 458.675
+          Robot01:
+            start_frame: 11
+            end_frame: 55238
+            start_s: 0.091667
+            end_s: 460.316667
+          Robot02:
+            start_frame: 10
+            end_frame: 55474
+            start_s: 0.083333
+            end_s: 462.283333
+      solved:
+        path: data/OptiTrack/solved/session 2/Take 2026-05-20 03.35.00 PM-4.csv
+        take_name: Take 2026-05-20 03.35.00 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 55475
+        duration_s: 462.28333333333336
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 47776
+            start_s: 0.0
+            end_s: 398.133333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 55474
+            start_s: 0.0
+            end_s: 462.283333
+          RigidBody03:
+            start_frame: 1375
+            end_frame: 55041
+            start_s: 11.458333
+            end_s: 458.675
+          Robot01:
+            start_frame: 0
+            end_frame: 55474
+            start_s: 0.0
+            end_s: 462.283333
+          Robot02:
+            start_frame: 0
+            end_frame: 55474
+            start_s: 0.0
+            end_s: 462.283333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-20T15:35:00+03:00'
+        goal_file: data/goals/session 2/scenario 4.csv
+  s3_scenario1:
+    session: 3
+    scenario: 1
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 724
+        end_frame: 33573
+        start_s: 6.033333
+        end_s: 279.775
+      RigidBody02:
+        start_frame: 1775
+        end_frame: 48104
+        start_s: 14.791667
+        end_s: 400.866667
+      RigidBody03:
+        start_frame: 2683
+        end_frame: 44697
+        start_s: 22.358333
+        end_s: 372.475
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 3/Take 2026-05-22 02.24.38 PM-1.csv
+        take_name: Take 2026-05-22 02.24.38 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 49725
+        duration_s: 414.3666666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 724
+            end_frame: 33573
+            start_s: 6.033333
+            end_s: 279.775
+          RigidBody02:
+            start_frame: 1775
+            end_frame: 48104
+            start_s: 14.791667
+            end_s: 400.866667
+          RigidBody03:
+            start_frame: 2683
+            end_frame: 44697
+            start_s: 22.358333
+            end_s: 372.475
+      solved:
+        path: data/OptiTrack/solved/session 3/Take 2026-05-22 02.24.38 PM-1.csv
+        take_name: Take 2026-05-22 02.24.38 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 49725
+        duration_s: 414.3666666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 49724
+            start_s: 0.0
+            end_s: 414.366667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 49724
+            start_s: 0.0
+            end_s: 414.366667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 49724
+            start_s: 0.0
+            end_s: 414.366667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-22T14:24:38+03:00'
+        goal_file: data/goals/session 3/log_20260522_142312scenario1.csv
+  s3_scenario2:
+    session: 3
+    scenario: 2
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2363
+        end_frame: 34348
+        start_s: 19.691667
+        end_s: 286.233333
+      RigidBody02:
+        start_frame: 1428
+        end_frame: 42974
+        start_s: 11.9
+        end_s: 358.116667
+      RigidBody03:
+        start_frame: 644
+        end_frame: 33737
+        start_s: 5.366667
+        end_s: 281.141667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 3/Take 2026-05-22 02.36.33 PM-2.csv
+        take_name: Take 2026-05-22 02.36.33 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 44026
+        duration_s: 366.875
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2363
+            end_frame: 34348
+            start_s: 19.691667
+            end_s: 286.233333
+          RigidBody02:
+            start_frame: 1428
+            end_frame: 42974
+            start_s: 11.9
+            end_s: 358.116667
+          RigidBody03:
+            start_frame: 644
+            end_frame: 33737
+            start_s: 5.366667
+            end_s: 281.141667
+      solved:
+        path: data/OptiTrack/solved/session 3/Take 2026-05-22 02.36.33 PM-2.csv
+        take_name: Take 2026-05-22 02.36.33 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 44026
+        duration_s: 366.875
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 44025
+            start_s: 0.0
+            end_s: 366.875
+          RigidBody02:
+            start_frame: 0
+            end_frame: 44025
+            start_s: 0.0
+            end_s: 366.875
+          RigidBody03:
+            start_frame: 0
+            end_frame: 44025
+            start_s: 0.0
+            end_s: 366.875
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-22T14:36:33+03:00'
+        goal_file: data/goals/session 3/log_20260522_143250 scenario2.csv
+  s3_scenario3:
+    session: 3
+    scenario: 3
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 37
+        end_frame: 33240
+        start_s: 0.308333
+        end_s: 277.0
+      RigidBody02:
+        start_frame: 2819
+        end_frame: 42868
+        start_s: 23.491667
+        end_s: 357.233333
+      RigidBody03:
+        start_frame: 1984
+        end_frame: 40578
+        start_s: 16.533333
+        end_s: 338.15
+      Robot01:
+        start_frame: 87
+        end_frame: 43090
+        start_s: 0.725
+        end_s: 359.083333
+      Robot02:
+        start_frame: 1658
+        end_frame: 45116
+        start_s: 13.816667
+        end_s: 375.966667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 3/Take 2026-05-22 02.52.23 PM-3.csv
+        take_name: Take 2026-05-22 02.52.23 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 45117
+        duration_s: 375.96666666666664
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 37
+            end_frame: 33240
+            start_s: 0.308333
+            end_s: 277.0
+          RigidBody02:
+            start_frame: 2819
+            end_frame: 42868
+            start_s: 23.491667
+            end_s: 357.233333
+          RigidBody03:
+            start_frame: 1984
+            end_frame: 40578
+            start_s: 16.533333
+            end_s: 338.15
+          Robot01:
+            start_frame: 87
+            end_frame: 43090
+            start_s: 0.725
+            end_s: 359.083333
+          Robot02:
+            start_frame: 1658
+            end_frame: 45116
+            start_s: 13.816667
+            end_s: 375.966667
+      solved:
+        path: data/OptiTrack/solved/session 3/Take 2026-05-22 02.52.23 PM-3.csv
+        take_name: Take 2026-05-22 02.52.23 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 45117
+        duration_s: 375.96666666666664
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 45116
+            start_s: 0.0
+            end_s: 375.966667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 45116
+            start_s: 0.0
+            end_s: 375.966667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 45116
+            start_s: 0.0
+            end_s: 375.966667
+          Robot01:
+            start_frame: 0
+            end_frame: 45116
+            start_s: 0.0
+            end_s: 375.966667
+          Robot02:
+            start_frame: 0
+            end_frame: 45116
+            start_s: 0.0
+            end_s: 375.966667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-22T14:52:23+03:00'
+        goal_file: data/goals/session 3/log_20260522_144714senario3.csv
+  s3_scenario4:
+    session: 3
+    scenario: 4
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 634
+        end_frame: 50884
+        start_s: 5.283333
+        end_s: 424.033333
+      RigidBody02:
+        start_frame: 2130
+        end_frame: 51824
+        start_s: 17.75
+        end_s: 431.866667
+      RigidBody03:
+        start_frame: 1366
+        end_frame: 34135
+        start_s: 11.383333
+        end_s: 284.458333
+      Robot01:
+        start_frame: 2732
+        end_frame: 52913
+        start_s: 22.766667
+        end_s: 440.941667
+      Robot02:
+        start_frame: 949
+        end_frame: 52913
+        start_s: 7.908333
+        end_s: 440.941667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 3/Take 2026-05-22 03.20.44 PM-4.csv
+        take_name: Take 2026-05-22 03.20.44 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 52914
+        duration_s: 440.94166666666666
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 634
+            end_frame: 50884
+            start_s: 5.283333
+            end_s: 424.033333
+          RigidBody02:
+            start_frame: 2130
+            end_frame: 51824
+            start_s: 17.75
+            end_s: 431.866667
+          RigidBody03:
+            start_frame: 1366
+            end_frame: 34135
+            start_s: 11.383333
+            end_s: 284.458333
+          Robot01:
+            start_frame: 2732
+            end_frame: 52913
+            start_s: 22.766667
+            end_s: 440.941667
+          Robot02:
+            start_frame: 949
+            end_frame: 52913
+            start_s: 7.908333
+            end_s: 440.941667
+      solved:
+        path: data/OptiTrack/solved/session 3/Take 2026-05-22 03.20.44 PM-4.csv
+        take_name: Take 2026-05-22 03.20.44 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 52914
+        duration_s: 440.94166666666666
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 52913
+            start_s: 0.0
+            end_s: 440.941667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 52913
+            start_s: 0.0
+            end_s: 440.941667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 52913
+            start_s: 0.0
+            end_s: 440.941667
+          Robot01:
+            start_frame: 0
+            end_frame: 52913
+            start_s: 0.0
+            end_s: 440.941667
+          Robot02:
+            start_frame: 0
+            end_frame: 52913
+            start_s: 0.0
+            end_s: 440.941667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-22T15:20:44+03:00'
+        goal_file: data/goals/session 3/log_20260522_145919scenario4.csv
+  s4_scenario1:
+    session: 4
+    scenario: 1
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 1937
+        end_frame: 47345
+        start_s: 16.141667
+        end_s: 394.541667
+      RigidBody02:
+        start_frame: 1299
+        end_frame: 43224
+        start_s: 10.825
+        end_s: 360.2
+      RigidBody03:
+        start_frame: 432
+        end_frame: 38717
+        start_s: 3.6
+        end_s: 322.641667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 4/Take 2026-05-26 10.32.56 AM-1.csv
+        take_name: Take 2026-05-26 10.32.56 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 48151
+        duration_s: 401.25
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1937
+            end_frame: 47345
+            start_s: 16.141667
+            end_s: 394.541667
+          RigidBody02:
+            start_frame: 1299
+            end_frame: 43224
+            start_s: 10.825
+            end_s: 360.2
+          RigidBody03:
+            start_frame: 432
+            end_frame: 38717
+            start_s: 3.6
+            end_s: 322.641667
+      solved:
+        path: data/OptiTrack/solved/session 4/Take 2026-05-26 10.32.56 AM-1.csv
+        take_name: Take 2026-05-26 10.32.56 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 48151
+        duration_s: 401.25
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 47605
+            start_s: 0.0
+            end_s: 396.708333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 43539
+            start_s: 0.0
+            end_s: 362.825
+          RigidBody03:
+            start_frame: 0
+            end_frame: 33809
+            start_s: 0.0
+            end_s: 281.741667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-26T10:32:56+03:00'
+        goal_file: data/goals/session 4/session 4 may 26 at 1000/log_20260526_103152experiment1.csv
+  s4_scenario2:
+    session: 4
+    scenario: 2
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 935
+        end_frame: 37572
+        start_s: 7.791667
+        end_s: 313.1
+      RigidBody02:
+        start_frame: 2520
+        end_frame: 35512
+        start_s: 21.0
+        end_s: 295.933333
+      RigidBody03:
+        start_frame: 1818
+        end_frame: 43194
+        start_s: 15.15
+        end_s: 359.95
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 4/Take 2026-05-26 10.42.02 AM-2.csv
+        take_name: Take 2026-05-26 10.42.02 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 43871
+        duration_s: 365.5833333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 935
+            end_frame: 37572
+            start_s: 7.791667
+            end_s: 313.1
+          RigidBody02:
+            start_frame: 2520
+            end_frame: 35512
+            start_s: 21.0
+            end_s: 295.933333
+          RigidBody03:
+            start_frame: 1818
+            end_frame: 43194
+            start_s: 15.15
+            end_s: 359.95
+      solved:
+        path: data/OptiTrack/solved/session 4/Take 2026-05-26 10.42.02 AM-2.csv
+        take_name: Take 2026-05-26 10.42.02 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 43871
+        duration_s: 365.5833333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 43870
+            start_s: 0.0
+            end_s: 365.583333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 43870
+            start_s: 0.0
+            end_s: 365.583333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 43870
+            start_s: 0.0
+            end_s: 365.583333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-26T10:42:02+03:00'
+        goal_file: data/goals/session 4/session 4 may 26 at 1000/log_20260526_104054experiment2.csv
+  s4_scenario3:
+    session: 4
+    scenario: 3
+    density: low
+    humans:
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody02:
+        start_frame: 1196
+        end_frame: 37657
+        start_s: 9.966667
+        end_s: 313.808333
+      RigidBody03:
+        start_frame: 0
+        end_frame: 42623
+        start_s: 0.0
+        end_s: 355.191667
+      Robot01:
+        start_frame: 14
+        end_frame: 43182
+        start_s: 0.116667
+        end_s: 359.85
+      Robot02:
+        start_frame: 1598
+        end_frame: 43182
+        start_s: 13.316667
+        end_s: 359.85
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 4/Take 2026-06-04 11.06.37 AM-3.csv
+        take_name: Take 2026-06-04 11.06.37 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 43183
+        duration_s: 359.85
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody02:
+            start_frame: 1196
+            end_frame: 37657
+            start_s: 9.966667
+            end_s: 313.808333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 42623
+            start_s: 0.0
+            end_s: 355.191667
+          Robot01:
+            start_frame: 14
+            end_frame: 43182
+            start_s: 0.116667
+            end_s: 359.85
+          Robot02:
+            start_frame: 1598
+            end_frame: 43182
+            start_s: 13.316667
+            end_s: 359.85
+      solved:
+        path: data/OptiTrack/solved/session 4/Take 2026-06-04 11.06.37 AM-3.csv
+        take_name: Take 2026-06-04 11.06.37 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 43183
+        duration_s: 359.85
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody02:
+            start_frame: 1196
+            end_frame: 37732
+            start_s: 9.966667
+            end_s: 314.433333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 42623
+            start_s: 0.0
+            end_s: 355.191667
+          Robot01:
+            start_frame: 0
+            end_frame: 43182
+            start_s: 0.0
+            end_s: 359.85
+          Robot02:
+            start_frame: 0
+            end_frame: 43182
+            start_s: 0.0
+            end_s: 359.85
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-04T11:06:37+03:00'
+        goal_file: data/goals/session 4/scenario 3 and 4/log_20260604_110547.csv
+  s4_scenario4:
+    session: 4
+    scenario: 4
+    density: low
+    humans:
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody02:
+        start_frame: 1339
+        end_frame: 43054
+        start_s: 11.158333
+        end_s: 358.783333
+      RigidBody03:
+        start_frame: 395
+        end_frame: 44840
+        start_s: 3.291667
+        end_s: 373.666667
+      Robot01:
+        start_frame: 14
+        end_frame: 45356
+        start_s: 0.116667
+        end_s: 377.966667
+      Robot02:
+        start_frame: 14
+        end_frame: 45356
+        start_s: 0.116667
+        end_s: 377.966667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 4/Take 2026-06-04 11.15.00 AM-4.csv
+        take_name: Take 2026-06-04 11.15.00 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 45357
+        duration_s: 377.96666666666664
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody02:
+            start_frame: 1339
+            end_frame: 43054
+            start_s: 11.158333
+            end_s: 358.783333
+          RigidBody03:
+            start_frame: 395
+            end_frame: 44840
+            start_s: 3.291667
+            end_s: 373.666667
+          Robot01:
+            start_frame: 14
+            end_frame: 45356
+            start_s: 0.116667
+            end_s: 377.966667
+          Robot02:
+            start_frame: 14
+            end_frame: 45356
+            start_s: 0.116667
+            end_s: 377.966667
+      solved:
+        path: data/OptiTrack/solved/session 4/Take 2026-06-04 11.15.00 AM-4.csv
+        take_name: Take 2026-06-04 11.15.00 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 45357
+        duration_s: 377.96666666666664
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody02:
+            start_frame: 1339
+            end_frame: 43173
+            start_s: 11.158333
+            end_s: 359.775
+          RigidBody03:
+            start_frame: 342
+            end_frame: 44943
+            start_s: 2.85
+            end_s: 374.525
+          Robot01:
+            start_frame: 0
+            end_frame: 45356
+            start_s: 0.0
+            end_s: 377.966667
+          Robot02:
+            start_frame: 0
+            end_frame: 45356
+            start_s: 0.0
+            end_s: 377.966667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-04T11:15:00+03:00'
+        goal_file: data/goals/session 4/scenario 3 and 4/log_20260604_111359.csv
+  s5_scenario1:
+    session: 5
+    scenario: 1
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 958
+        end_frame: 44723
+        start_s: 7.983333
+        end_s: 372.691667
+      RigidBody02:
+        start_frame: 1785
+        end_frame: 55155
+        start_s: 14.875
+        end_s: 459.625
+      RigidBody03:
+        start_frame: 4900
+        end_frame: 48777
+        start_s: 40.833333
+        end_s: 406.475
+      RigidBody04:
+        start_frame: 3457
+        end_frame: 57212
+        start_s: 28.808333
+        end_s: 476.766667
+      RigidBody05:
+        start_frame: 2738
+        end_frame: 52977
+        start_s: 22.816667
+        end_s: 441.475
+      RigidBody06:
+        start_frame: 287
+        end_frame: 39809
+        start_s: 2.391667
+        end_s: 331.741667
+      RigidBody07:
+        start_frame: 3937
+        end_frame: 63509
+        start_s: 32.808333
+        end_s: 529.241667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 5/Take 2026-05-27 02.13.54 PM-1.csv
+        take_name: Take 2026-05-27 02.13.54 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 64099
+        duration_s: 534.15
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 958
+            end_frame: 44723
+            start_s: 7.983333
+            end_s: 372.691667
+          RigidBody02:
+            start_frame: 1785
+            end_frame: 55155
+            start_s: 14.875
+            end_s: 459.625
+          RigidBody03:
+            start_frame: 4900
+            end_frame: 48777
+            start_s: 40.833333
+            end_s: 406.475
+          RigidBody04:
+            start_frame: 3457
+            end_frame: 57212
+            start_s: 28.808333
+            end_s: 476.766667
+          RigidBody05:
+            start_frame: 2738
+            end_frame: 52977
+            start_s: 22.816667
+            end_s: 441.475
+          RigidBody06:
+            start_frame: 287
+            end_frame: 39809
+            start_s: 2.391667
+            end_s: 331.741667
+          RigidBody07:
+            start_frame: 3937
+            end_frame: 63509
+            start_s: 32.808333
+            end_s: 529.241667
+      solved:
+        path: data/OptiTrack/solved/session 5/Take 2026-05-27 02.13.54 PM-1.csv
+        take_name: Take 2026-05-27 02.13.54 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 64099
+        duration_s: 534.15
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 958
+            end_frame: 44723
+            start_s: 7.983333
+            end_s: 372.691667
+          RigidBody02:
+            start_frame: 1785
+            end_frame: 56100
+            start_s: 14.875
+            end_s: 467.5
+          RigidBody03:
+            start_frame: 0
+            end_frame: 48777
+            start_s: 0.0
+            end_s: 406.475
+          RigidBody04:
+            start_frame: 0
+            end_frame: 57212
+            start_s: 0.0
+            end_s: 476.766667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 52977
+            start_s: 0.0
+            end_s: 441.475
+          RigidBody06:
+            start_frame: 287
+            end_frame: 39809
+            start_s: 2.391667
+            end_s: 331.741667
+          RigidBody07:
+            start_frame: 0
+            end_frame: 63537
+            start_s: 0.0
+            end_s: 529.475
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-27T14:13:54+03:00'
+        goal_file: data/goals/session 5/log_20260527_141321 senario1.csv
+  s5_scenario2:
+    session: 5
+    scenario: 2
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2048
+        end_frame: 52205
+        start_s: 17.066667
+        end_s: 435.041667
+      RigidBody02:
+        start_frame: 315
+        end_frame: 56406
+        start_s: 2.625
+        end_s: 470.05
+      RigidBody03:
+        start_frame: 5430
+        end_frame: 58113
+        start_s: 45.25
+        end_s: 484.275
+      RigidBody04:
+        start_frame: 4430
+        end_frame: 53706
+        start_s: 36.916667
+        end_s: 447.55
+      RigidBody05:
+        start_frame: 2876
+        end_frame: 46342
+        start_s: 23.966667
+        end_s: 386.183333
+      RigidBody06:
+        start_frame: 1230
+        end_frame: 41731
+        start_s: 10.25
+        end_s: 347.758333
+      RigidBody07:
+        start_frame: 3585
+        end_frame: 49763
+        start_s: 29.875
+        end_s: 414.691667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 5/Take 2026-05-27 02.24.58 PM-2.csv
+        take_name: Take 2026-05-27 02.24.58 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 58515
+        duration_s: 487.6166666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2048
+            end_frame: 52205
+            start_s: 17.066667
+            end_s: 435.041667
+          RigidBody02:
+            start_frame: 315
+            end_frame: 56406
+            start_s: 2.625
+            end_s: 470.05
+          RigidBody03:
+            start_frame: 5430
+            end_frame: 58113
+            start_s: 45.25
+            end_s: 484.275
+          RigidBody04:
+            start_frame: 4430
+            end_frame: 53706
+            start_s: 36.916667
+            end_s: 447.55
+          RigidBody05:
+            start_frame: 2876
+            end_frame: 46342
+            start_s: 23.966667
+            end_s: 386.183333
+          RigidBody06:
+            start_frame: 1230
+            end_frame: 41731
+            start_s: 10.25
+            end_s: 347.758333
+          RigidBody07:
+            start_frame: 3585
+            end_frame: 49763
+            start_s: 29.875
+            end_s: 414.691667
+      solved:
+        path: data/OptiTrack/solved/session 5/Take 2026-05-27 02.24.58 PM-2.csv
+        take_name: Take 2026-05-27 02.24.58 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 58515
+        duration_s: 487.6166666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 52205
+            start_s: 0.0
+            end_s: 435.041667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 56406
+            start_s: 0.0
+            end_s: 470.05
+          RigidBody03:
+            start_frame: 0
+            end_frame: 58113
+            start_s: 0.0
+            end_s: 484.275
+          RigidBody04:
+            start_frame: 0
+            end_frame: 58514
+            start_s: 0.0
+            end_s: 487.616667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 46368
+            start_s: 0.0
+            end_s: 386.4
+          RigidBody06:
+            start_frame: 0
+            end_frame: 41731
+            start_s: 0.0
+            end_s: 347.758333
+          RigidBody07:
+            start_frame: 0
+            end_frame: 49763
+            start_s: 0.0
+            end_s: 414.691667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-27T14:24:58+03:00'
+        goal_file: data/goals/session 5/log_20260527_142316scenario2.csv
+  s5_scenario3:
+    session: 5
+    scenario: 3
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 8588
+        end_frame: 63070
+        start_s: 71.566667
+        end_s: 525.583333
+      RigidBody02:
+        start_frame: 1431
+        end_frame: 50146
+        start_s: 11.925
+        end_s: 417.883333
+      RigidBody03:
+        start_frame: 2416
+        end_frame: 48807
+        start_s: 20.133333
+        end_s: 406.725
+      RigidBody04:
+        start_frame: 3816
+        end_frame: 54533
+        start_s: 31.8
+        end_s: 454.441667
+      RigidBody05:
+        start_frame: 3109
+        end_frame: 64105
+        start_s: 25.908333
+        end_s: 534.208333
+      RigidBody06:
+        start_frame: 7139
+        end_frame: 60223
+        start_s: 59.491667
+        end_s: 501.858333
+      RigidBody07:
+        start_frame: 502
+        end_frame: 60505
+        start_s: 4.183333
+        end_s: 504.208333
+      Robot01:
+        start_frame: 138
+        end_frame: 62024
+        start_s: 1.15
+        end_s: 516.866667
+      Robot02:
+        start_frame: 14
+        end_frame: 64109
+        start_s: 0.116667
+        end_s: 534.241667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 5/Take 2026-05-27 02.42.48 PM-3.csv
+        take_name: Take 2026-05-27 02.42.48 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 64110
+        duration_s: 534.2416666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 8588
+            end_frame: 63070
+            start_s: 71.566667
+            end_s: 525.583333
+          RigidBody02:
+            start_frame: 1431
+            end_frame: 50146
+            start_s: 11.925
+            end_s: 417.883333
+          RigidBody03:
+            start_frame: 2416
+            end_frame: 48807
+            start_s: 20.133333
+            end_s: 406.725
+          RigidBody04:
+            start_frame: 3816
+            end_frame: 54533
+            start_s: 31.8
+            end_s: 454.441667
+          RigidBody05:
+            start_frame: 3109
+            end_frame: 64105
+            start_s: 25.908333
+            end_s: 534.208333
+          RigidBody06:
+            start_frame: 7139
+            end_frame: 60223
+            start_s: 59.491667
+            end_s: 501.858333
+          RigidBody07:
+            start_frame: 502
+            end_frame: 60505
+            start_s: 4.183333
+            end_s: 504.208333
+          Robot01:
+            start_frame: 138
+            end_frame: 62024
+            start_s: 1.15
+            end_s: 516.866667
+          Robot02:
+            start_frame: 14
+            end_frame: 64109
+            start_s: 0.116667
+            end_s: 534.241667
+      solved:
+        path: data/OptiTrack/solved/session 5/Take 2026-05-27 02.42.48 PM-3.csv
+        take_name: Take 2026-05-27 02.42.48 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 64110
+        duration_s: 534.2416666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 63097
+            start_s: 0.0
+            end_s: 525.808333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 50445
+            start_s: 0.0
+            end_s: 420.375
+          RigidBody03:
+            start_frame: 0
+            end_frame: 48807
+            start_s: 0.0
+            end_s: 406.725
+          RigidBody04:
+            start_frame: 0
+            end_frame: 51029
+            start_s: 0.0
+            end_s: 425.241667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 55307
+            start_s: 0.0
+            end_s: 460.891667
+          RigidBody06:
+            start_frame: 0
+            end_frame: 60223
+            start_s: 0.0
+            end_s: 501.858333
+          RigidBody07:
+            start_frame: 0
+            end_frame: 64109
+            start_s: 0.0
+            end_s: 534.241667
+          Robot01:
+            start_frame: 0
+            end_frame: 64109
+            start_s: 0.0
+            end_s: 534.241667
+          Robot02:
+            start_frame: 0
+            end_frame: 64109
+            start_s: 0.0
+            end_s: 534.241667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-27T14:42:48+03:00'
+        goal_file: data/goals/session 5/log_20260527_143437scenario3.csv
+  s5_scenario4:
+    session: 5
+    scenario: 4
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 1622
+        end_frame: 54205
+        start_s: 13.516667
+        end_s: 451.708333
+      RigidBody02:
+        start_frame: 1040
+        end_frame: 42823
+        start_s: 8.666667
+        end_s: 356.858333
+      RigidBody03:
+        start_frame: 275
+        end_frame: 46335
+        start_s: 2.291667
+        end_s: 386.125
+      RigidBody04:
+        start_frame: 962
+        end_frame: 53196
+        start_s: 8.016667
+        end_s: 443.3
+      RigidBody05:
+        start_frame: 3962
+        end_frame: 32743
+        start_s: 33.016667
+        end_s: 272.858333
+      RigidBody06:
+        start_frame: 2436
+        end_frame: 46126
+        start_s: 20.3
+        end_s: 384.383333
+      RigidBody07:
+        start_frame: 3356
+        end_frame: 43097
+        start_s: 27.966667
+        end_s: 359.141667
+      Robot01:
+        start_frame: 4389
+        end_frame: 42480
+        start_s: 36.575
+        end_s: 354.0
+      Robot02:
+        start_frame: 59
+        end_frame: 54574
+        start_s: 0.491667
+        end_s: 454.783333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 5/Take 2026-05-27 02.59.22 PM-4.csv
+        take_name: Take 2026-05-27 02.59.22 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 54591
+        duration_s: 454.9166666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1622
+            end_frame: 54205
+            start_s: 13.516667
+            end_s: 451.708333
+          RigidBody02:
+            start_frame: 1040
+            end_frame: 42823
+            start_s: 8.666667
+            end_s: 356.858333
+          RigidBody03:
+            start_frame: 275
+            end_frame: 46335
+            start_s: 2.291667
+            end_s: 386.125
+          RigidBody04:
+            start_frame: 962
+            end_frame: 53196
+            start_s: 8.016667
+            end_s: 443.3
+          RigidBody05:
+            start_frame: 3962
+            end_frame: 32743
+            start_s: 33.016667
+            end_s: 272.858333
+          RigidBody06:
+            start_frame: 2436
+            end_frame: 46126
+            start_s: 20.3
+            end_s: 384.383333
+          RigidBody07:
+            start_frame: 3356
+            end_frame: 43097
+            start_s: 27.966667
+            end_s: 359.141667
+          Robot01:
+            start_frame: 4389
+            end_frame: 42480
+            start_s: 36.575
+            end_s: 354.0
+          Robot02:
+            start_frame: 59
+            end_frame: 54574
+            start_s: 0.491667
+            end_s: 454.783333
+      solved:
+        path: data/OptiTrack/solved/session 5/Take 2026-05-27 02.59.22 PM-4.csv
+        take_name: Take 2026-05-27 02.59.22 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 54591
+        duration_s: 454.9166666666667
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 54236
+            start_s: 0.0
+            end_s: 451.966667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 42949
+            start_s: 0.0
+            end_s: 357.908333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 46426
+            start_s: 0.0
+            end_s: 386.883333
+          RigidBody04:
+            start_frame: 0
+            end_frame: 48232
+            start_s: 0.0
+            end_s: 401.933333
+          RigidBody05:
+            start_frame: 0
+            end_frame: 19085
+            start_s: 0.0
+            end_s: 159.041667
+          RigidBody06:
+            start_frame: 0
+            end_frame: 46126
+            start_s: 0.0
+            end_s: 384.383333
+          RigidBody07:
+            start_frame: 0
+            end_frame: 43706
+            start_s: 0.0
+            end_s: 364.216667
+          Robot01:
+            start_frame: 0
+            end_frame: 54590
+            start_s: 0.0
+            end_s: 454.916667
+          Robot02:
+            start_frame: 0
+            end_frame: 54590
+            start_s: 0.0
+            end_s: 454.916667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-27T14:59:22+03:00'
+        goal_file: data/goals/session 5/log_20260527_145244scenario4.csv
+  s6_scenario1:
+    session: 6
+    scenario: 1
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2081
+        end_frame: 56014
+        start_s: 17.341667
+        end_s: 466.783333
+      RigidBody02:
+        start_frame: 2851
+        end_frame: 54585
+        start_s: 23.758333
+        end_s: 454.875
+      RigidBody03:
+        start_frame: 311
+        end_frame: 32361
+        start_s: 2.591667
+        end_s: 269.675
+      RigidBody04:
+        start_frame: 951
+        end_frame: 57930
+        start_s: 7.925
+        end_s: 482.75
+      RigidBody05:
+        start_frame: 1693
+        end_frame: 45952
+        start_s: 14.108333
+        end_s: 382.933333
+      RigidBody06:
+        start_frame: 3732
+        end_frame: 52753
+        start_s: 31.1
+        end_s: 439.608333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 6/Take 2026-05-28 10.43.46 AM-1.csv
+        take_name: Take 2026-05-28 10.43.46 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 58449
+        duration_s: 487.06666666666666
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2081
+            end_frame: 56014
+            start_s: 17.341667
+            end_s: 466.783333
+          RigidBody02:
+            start_frame: 2851
+            end_frame: 54585
+            start_s: 23.758333
+            end_s: 454.875
+          RigidBody03:
+            start_frame: 311
+            end_frame: 32361
+            start_s: 2.591667
+            end_s: 269.675
+          RigidBody04:
+            start_frame: 951
+            end_frame: 57930
+            start_s: 7.925
+            end_s: 482.75
+          RigidBody05:
+            start_frame: 1693
+            end_frame: 45952
+            start_s: 14.108333
+            end_s: 382.933333
+          RigidBody06:
+            start_frame: 3732
+            end_frame: 52753
+            start_s: 31.1
+            end_s: 439.608333
+      solved:
+        path: data/OptiTrack/solved/session 6/Take 2026-05-28 10.43.46 AM-1.csv
+        take_name: Take 2026-05-28 10.43.46 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 58449
+        duration_s: 487.06666666666666
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 43033
+            start_s: 0.0
+            end_s: 358.608333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 54850
+            start_s: 0.0
+            end_s: 457.083333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 32556
+            start_s: 0.0
+            end_s: 271.3
+          RigidBody04:
+            start_frame: 0
+            end_frame: 58176
+            start_s: 0.0
+            end_s: 484.8
+          RigidBody05:
+            start_frame: 0
+            end_frame: 46311
+            start_s: 0.0
+            end_s: 385.925
+          RigidBody06:
+            start_frame: 0
+            end_frame: 52933
+            start_s: 0.0
+            end_s: 441.108333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-28T10:43:46+03:00'
+        goal_file: data/goals/session 6/log_20260528_104304.csv
+  s6_scenario2:
+    session: 6
+    scenario: 2
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 1945
+        end_frame: 51661
+        start_s: 16.208333
+        end_s: 430.508333
+      RigidBody02:
+        start_frame: 4257
+        end_frame: 49129
+        start_s: 35.475
+        end_s: 409.408333
+      RigidBody03:
+        start_frame: 1448
+        end_frame: 50273
+        start_s: 12.066667
+        end_s: 418.941667
+      RigidBody04:
+        start_frame: 1045
+        end_frame: 47098
+        start_s: 8.708333
+        end_s: 392.483333
+      RigidBody05:
+        start_frame: 2878
+        end_frame: 51001
+        start_s: 23.983333
+        end_s: 425.008333
+      RigidBody06:
+        start_frame: 3827
+        end_frame: 50066
+        start_s: 31.891667
+        end_s: 417.216667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 6/Take 2026-05-28 10.54.10 AM-2.csv
+        take_name: Take 2026-05-28 10.54.10 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 52246
+        duration_s: 435.375
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1945
+            end_frame: 51661
+            start_s: 16.208333
+            end_s: 430.508333
+          RigidBody02:
+            start_frame: 4257
+            end_frame: 49129
+            start_s: 35.475
+            end_s: 409.408333
+          RigidBody03:
+            start_frame: 1448
+            end_frame: 50273
+            start_s: 12.066667
+            end_s: 418.941667
+          RigidBody04:
+            start_frame: 1045
+            end_frame: 47098
+            start_s: 8.708333
+            end_s: 392.483333
+          RigidBody05:
+            start_frame: 2878
+            end_frame: 51001
+            start_s: 23.983333
+            end_s: 425.008333
+          RigidBody06:
+            start_frame: 3827
+            end_frame: 50066
+            start_s: 31.891667
+            end_s: 417.216667
+      solved:
+        path: data/OptiTrack/solved/session 6/Take 2026-05-28 10.54.10 AM-2.csv
+        take_name: Take 2026-05-28 10.54.10 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 52246
+        duration_s: 435.375
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1945
+            end_frame: 52245
+            start_s: 16.208333
+            end_s: 435.375
+          RigidBody02:
+            start_frame: 0
+            end_frame: 49758
+            start_s: 0.0
+            end_s: 414.65
+          RigidBody03:
+            start_frame: 0
+            end_frame: 52245
+            start_s: 0.0
+            end_s: 435.375
+          RigidBody04:
+            start_frame: 0
+            end_frame: 47372
+            start_s: 0.0
+            end_s: 394.766667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 51340
+            start_s: 0.0
+            end_s: 427.833333
+          RigidBody06:
+            start_frame: 0
+            end_frame: 52245
+            start_s: 0.0
+            end_s: 435.375
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-28T10:54:10+03:00'
+        goal_file: data/goals/session 6/log_20260528_105217.csv
+  s6_scenario3:
+    session: 6
+    scenario: 3
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 4789
+        end_frame: 56647
+        start_s: 39.908333
+        end_s: 472.058333
+      RigidBody02:
+        start_frame: 2730
+        end_frame: 46819
+        start_s: 22.75
+        end_s: 390.158333
+      RigidBody03:
+        start_frame: 1521
+        end_frame: 45657
+        start_s: 12.675
+        end_s: 380.475
+      RigidBody04:
+        start_frame: 6331
+        end_frame: 57725
+        start_s: 52.758333
+        end_s: 481.041667
+      RigidBody05:
+        start_frame: 332
+        end_frame: 46203
+        start_s: 2.766667
+        end_s: 385.025
+      RigidBody06:
+        start_frame: 4016
+        end_frame: 51004
+        start_s: 33.466667
+        end_s: 425.033333
+      Robot01:
+        start_frame: 17
+        end_frame: 57942
+        start_s: 0.141667
+        end_s: 482.85
+      Robot02:
+        start_frame: 14
+        end_frame: 58206
+        start_s: 0.116667
+        end_s: 485.05
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 6/Take 2026-05-28 11.06.35 AM-3.csv
+        take_name: Take 2026-05-28 11.06.35 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 58207
+        duration_s: 485.05
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 4789
+            end_frame: 56647
+            start_s: 39.908333
+            end_s: 472.058333
+          RigidBody02:
+            start_frame: 2730
+            end_frame: 46819
+            start_s: 22.75
+            end_s: 390.158333
+          RigidBody03:
+            start_frame: 1521
+            end_frame: 45657
+            start_s: 12.675
+            end_s: 380.475
+          RigidBody04:
+            start_frame: 6331
+            end_frame: 57725
+            start_s: 52.758333
+            end_s: 481.041667
+          RigidBody05:
+            start_frame: 332
+            end_frame: 46203
+            start_s: 2.766667
+            end_s: 385.025
+          RigidBody06:
+            start_frame: 4016
+            end_frame: 51004
+            start_s: 33.466667
+            end_s: 425.033333
+          Robot01:
+            start_frame: 17
+            end_frame: 57942
+            start_s: 0.141667
+            end_s: 482.85
+          Robot02:
+            start_frame: 14
+            end_frame: 58206
+            start_s: 0.116667
+            end_s: 485.05
+      solved:
+        path: data/OptiTrack/solved/session 6/Take 2026-05-28 11.06.35 AM-3.csv
+        take_name: Take 2026-05-28 11.06.35 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 58207
+        duration_s: 485.05
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 58206
+            start_s: 0.0
+            end_s: 485.05
+          RigidBody02:
+            start_frame: 0
+            end_frame: 47662
+            start_s: 0.0
+            end_s: 397.183333
+          RigidBody03:
+            start_frame: 0
+            end_frame: 45726
+            start_s: 0.0
+            end_s: 381.05
+          RigidBody04:
+            start_frame: 0
+            end_frame: 57855
+            start_s: 0.0
+            end_s: 482.125
+          RigidBody05:
+            start_frame: 297
+            end_frame: 46585
+            start_s: 2.475
+            end_s: 388.208333
+          RigidBody06:
+            start_frame: 0
+            end_frame: 51244
+            start_s: 0.0
+            end_s: 427.033333
+          Robot01:
+            start_frame: 0
+            end_frame: 58206
+            start_s: 0.0
+            end_s: 485.05
+          Robot02:
+            start_frame: 0
+            end_frame: 58206
+            start_s: 0.0
+            end_s: 485.05
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-28T11:06:35+03:00'
+        goal_file: data/goals/session 6/log_20260528_110221.csv
+  s6_scenario4:
+    session: 6
+    scenario: 4
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2688
+        end_frame: 44315
+        start_s: 22.4
+        end_s: 369.291667
+      RigidBody02:
+        start_frame: 2966
+        end_frame: 44078
+        start_s: 24.716667
+        end_s: 367.316667
+      RigidBody03:
+        start_frame: 3672
+        end_frame: 44574
+        start_s: 30.6
+        end_s: 371.45
+      RigidBody04:
+        start_frame: 529
+        end_frame: 48153
+        start_s: 4.408333
+        end_s: 401.275
+      RigidBody05:
+        start_frame: 1973
+        end_frame: 42954
+        start_s: 16.441667
+        end_s: 357.95
+      RigidBody06:
+        start_frame: 3138
+        end_frame: 46992
+        start_s: 26.15
+        end_s: 391.6
+      Robot01:
+        start_frame: 24
+        end_frame: 49094
+        start_s: 0.2
+        end_s: 409.116667
+      Robot02:
+        start_frame: 13
+        end_frame: 48339
+        start_s: 0.108333
+        end_s: 402.825
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 6/Take 2026-05-28 11.25.06 AM-4.csv
+        take_name: Take 2026-05-28 11.25.06 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 49325
+        duration_s: 411.03333333333336
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2688
+            end_frame: 44315
+            start_s: 22.4
+            end_s: 369.291667
+          RigidBody02:
+            start_frame: 2966
+            end_frame: 44078
+            start_s: 24.716667
+            end_s: 367.316667
+          RigidBody03:
+            start_frame: 3672
+            end_frame: 44574
+            start_s: 30.6
+            end_s: 371.45
+          RigidBody04:
+            start_frame: 529
+            end_frame: 48153
+            start_s: 4.408333
+            end_s: 401.275
+          RigidBody05:
+            start_frame: 1973
+            end_frame: 42954
+            start_s: 16.441667
+            end_s: 357.95
+          RigidBody06:
+            start_frame: 3138
+            end_frame: 46992
+            start_s: 26.15
+            end_s: 391.6
+          Robot01:
+            start_frame: 24
+            end_frame: 49094
+            start_s: 0.2
+            end_s: 409.116667
+          Robot02:
+            start_frame: 13
+            end_frame: 48339
+            start_s: 0.108333
+            end_s: 402.825
+      solved:
+        path: data/OptiTrack/solved/session 6/Take 2026-05-28 11.25.06 AM-4.csv
+        take_name: Take 2026-05-28 11.25.06 AM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 49325
+        duration_s: 411.03333333333336
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 44315
+            start_s: 0.0
+            end_s: 369.291667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 43781
+            start_s: 0.0
+            end_s: 364.841667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 44772
+            start_s: 0.0
+            end_s: 373.1
+          RigidBody04:
+            start_frame: 0
+            end_frame: 48239
+            start_s: 0.0
+            end_s: 401.991667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 43242
+            start_s: 0.0
+            end_s: 360.35
+          RigidBody06:
+            start_frame: 0
+            end_frame: 47417
+            start_s: 0.0
+            end_s: 395.141667
+          Robot01:
+            start_frame: 0
+            end_frame: 49324
+            start_s: 0.0
+            end_s: 411.033333
+          Robot02:
+            start_frame: 0
+            end_frame: 49324
+            start_s: 0.0
+            end_s: 411.033333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-05-28T11:25:06+03:00'
+        goal_file: data/goals/session 6/log_20260528_111603.csv
+  s7_scenario1:
+    session: 7
+    scenario: 1
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2667
+        end_frame: 56776
+        start_s: 22.225
+        end_s: 473.133333
+      RigidBody02:
+        start_frame: 5034
+        end_frame: 76580
+        start_s: 41.95
+        end_s: 638.166667
+      RigidBody03:
+        start_frame: 1875
+        end_frame: 54367
+        start_s: 15.625
+        end_s: 453.058333
+      RigidBody04:
+        start_frame: 1323
+        end_frame: 56765
+        start_s: 11.025
+        end_s: 473.041667
+      RigidBody05:
+        start_frame: 3325
+        end_frame: 55646
+        start_s: 27.708333
+        end_s: 463.716667
+      RigidBody06:
+        start_frame: 361
+        end_frame: 67752
+        start_s: 3.008333
+        end_s: 564.6
+      RigidBody07:
+        start_frame: 4173
+        end_frame: 59498
+        start_s: 34.775
+        end_s: 495.816667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 7/Take 2026-06-02 02.18.29 PM-1.csv
+        take_name: Take 2026-06-02 02.18.29 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 77759
+        duration_s: 647.9833333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2667
+            end_frame: 56776
+            start_s: 22.225
+            end_s: 473.133333
+          RigidBody02:
+            start_frame: 5034
+            end_frame: 76580
+            start_s: 41.95
+            end_s: 638.166667
+          RigidBody03:
+            start_frame: 1875
+            end_frame: 54367
+            start_s: 15.625
+            end_s: 453.058333
+          RigidBody04:
+            start_frame: 1323
+            end_frame: 56765
+            start_s: 11.025
+            end_s: 473.041667
+          RigidBody05:
+            start_frame: 3325
+            end_frame: 55646
+            start_s: 27.708333
+            end_s: 463.716667
+          RigidBody06:
+            start_frame: 361
+            end_frame: 67752
+            start_s: 3.008333
+            end_s: 564.6
+          RigidBody07:
+            start_frame: 4173
+            end_frame: 59498
+            start_s: 34.775
+            end_s: 495.816667
+      solved:
+        path: data/OptiTrack/solved/session 7/Take 2026-06-02 02.18.29 PM-1.csv
+        take_name: Take 2026-06-02 02.18.29 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 77759
+        duration_s: 647.9833333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 56776
+            start_s: 0.0
+            end_s: 473.133333
+          RigidBody02:
+            start_frame: 0
+            end_frame: 76641
+            start_s: 0.0
+            end_s: 638.675
+          RigidBody03:
+            start_frame: 0
+            end_frame: 53392
+            start_s: 0.0
+            end_s: 444.933333
+          RigidBody04:
+            start_frame: 0
+            end_frame: 77758
+            start_s: 0.0
+            end_s: 647.983333
+          RigidBody05:
+            start_frame: 0
+            end_frame: 55656
+            start_s: 0.0
+            end_s: 463.8
+          RigidBody06:
+            start_frame: 0
+            end_frame: 77758
+            start_s: 0.0
+            end_s: 647.983333
+          RigidBody07:
+            start_frame: 0
+            end_frame: 59833
+            start_s: 0.0
+            end_s: 498.608333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-02T14:18:29+03:00'
+        goal_file: data/goals/session 7/log_20260602_141727 exp1.csv
+  s7_scenario2:
+    session: 7
+    scenario: 2
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 3643
+        end_frame: 46199
+        start_s: 30.358333
+        end_s: 384.991667
+      RigidBody02:
+        start_frame: 771
+        end_frame: 51337
+        start_s: 6.425
+        end_s: 427.808333
+      RigidBody03:
+        start_frame: 2713
+        end_frame: 44942
+        start_s: 22.608333
+        end_s: 374.516667
+      RigidBody04:
+        start_frame: 5052
+        end_frame: 45402
+        start_s: 42.1
+        end_s: 378.35
+      RigidBody05:
+        start_frame: 3487
+        end_frame: 47669
+        start_s: 29.058333
+        end_s: 397.241667
+      RigidBody06:
+        start_frame: 1677
+        end_frame: 52762
+        start_s: 13.975
+        end_s: 439.683333
+      RigidBody07:
+        start_frame: 5729
+        end_frame: 48388
+        start_s: 47.741667
+        end_s: 403.233333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 7/Take 2026-06-02 02.31.51 PM-2.csv
+        take_name: Take 2026-06-02 02.31.51 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 53238
+        duration_s: 443.64166666666665
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 3643
+            end_frame: 46199
+            start_s: 30.358333
+            end_s: 384.991667
+          RigidBody02:
+            start_frame: 771
+            end_frame: 51337
+            start_s: 6.425
+            end_s: 427.808333
+          RigidBody03:
+            start_frame: 2713
+            end_frame: 44942
+            start_s: 22.608333
+            end_s: 374.516667
+          RigidBody04:
+            start_frame: 5052
+            end_frame: 45402
+            start_s: 42.1
+            end_s: 378.35
+          RigidBody05:
+            start_frame: 3487
+            end_frame: 47669
+            start_s: 29.058333
+            end_s: 397.241667
+          RigidBody06:
+            start_frame: 1677
+            end_frame: 52762
+            start_s: 13.975
+            end_s: 439.683333
+          RigidBody07:
+            start_frame: 5729
+            end_frame: 48388
+            start_s: 47.741667
+            end_s: 403.233333
+      solved:
+        path: data/OptiTrack/solved/session 7/Take 2026-06-02 02.31.51 PM-2.csv
+        take_name: Take 2026-06-02 02.31.51 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 53238
+        duration_s: 443.64166666666665
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+          RigidBody04:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+          RigidBody06:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+          RigidBody07:
+            start_frame: 0
+            end_frame: 53237
+            start_s: 0.0
+            end_s: 443.641667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-02T14:31:51+03:00'
+        goal_file: data/goals/session 7/log_20260602_143111exp2.csv
+  s7_scenario3:
+    session: 7
+    scenario: 3
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 3685
+        end_frame: 49125
+        start_s: 30.708333
+        end_s: 409.375
+      RigidBody02:
+        start_frame: 1800
+        end_frame: 55449
+        start_s: 15.0
+        end_s: 462.075
+      RigidBody03:
+        start_frame: 895
+        end_frame: 50576
+        start_s: 7.458333
+        end_s: 421.466667
+      RigidBody04:
+        start_frame: 2569
+        end_frame: 52298
+        start_s: 21.408333
+        end_s: 435.816667
+      RigidBody05:
+        start_frame: 3084
+        end_frame: 51279
+        start_s: 25.7
+        end_s: 427.325
+      RigidBody06:
+        start_frame: 4267
+        end_frame: 52600
+        start_s: 35.558333
+        end_s: 438.333333
+      RigidBody07:
+        start_frame: 4950
+        end_frame: 48444
+        start_s: 41.25
+        end_s: 403.7
+      Robot01:
+        start_frame: 646
+        end_frame: 55881
+        start_s: 5.383333
+        end_s: 465.675
+      Robot02:
+        start_frame: 469
+        end_frame: 55881
+        start_s: 3.908333
+        end_s: 465.675
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 7/Take 2026-06-02 02.45.14 PM-3.csv
+        take_name: Take 2026-06-02 02.45.14 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 55882
+        duration_s: 465.675
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 3685
+            end_frame: 49125
+            start_s: 30.708333
+            end_s: 409.375
+          RigidBody02:
+            start_frame: 1800
+            end_frame: 55449
+            start_s: 15.0
+            end_s: 462.075
+          RigidBody03:
+            start_frame: 895
+            end_frame: 50576
+            start_s: 7.458333
+            end_s: 421.466667
+          RigidBody04:
+            start_frame: 2569
+            end_frame: 52298
+            start_s: 21.408333
+            end_s: 435.816667
+          RigidBody05:
+            start_frame: 3084
+            end_frame: 51279
+            start_s: 25.7
+            end_s: 427.325
+          RigidBody06:
+            start_frame: 4267
+            end_frame: 52600
+            start_s: 35.558333
+            end_s: 438.333333
+          RigidBody07:
+            start_frame: 4950
+            end_frame: 48444
+            start_s: 41.25
+            end_s: 403.7
+          Robot01:
+            start_frame: 646
+            end_frame: 55881
+            start_s: 5.383333
+            end_s: 465.675
+          Robot02:
+            start_frame: 469
+            end_frame: 55881
+            start_s: 3.908333
+            end_s: 465.675
+      solved:
+        path: data/OptiTrack/solved/session 7/Take 2026-06-02 02.45.14 PM-3.csv
+        take_name: Take 2026-06-02 02.45.14 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 55882
+        duration_s: 465.675
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          RigidBody02:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          RigidBody03:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          RigidBody04:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          RigidBody05:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          RigidBody06:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          RigidBody07:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          Robot01:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+          Robot02:
+            start_frame: 0
+            end_frame: 55881
+            start_s: 0.0
+            end_s: 465.675
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-02T14:45:14+03:00'
+        goal_file: data/goals/session 7/log_20260602_144139exp3.csv
+  s7_scenario4:
+    session: 7
+    scenario: 4
+    density: high
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    - RigidBody04
+    - RigidBody05
+    - RigidBody06
+    - RigidBody07
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 4631
+        end_frame: 54954
+        start_s: 38.591667
+        end_s: 457.95
+      RigidBody02:
+        start_frame: 3099
+        end_frame: 51402
+        start_s: 25.825
+        end_s: 428.35
+      RigidBody03:
+        start_frame: 1156
+        end_frame: 52625
+        start_s: 9.633333
+        end_s: 438.541667
+      RigidBody04:
+        start_frame: 3682
+        end_frame: 49924
+        start_s: 30.683333
+        end_s: 416.033333
+      RigidBody05:
+        start_frame: 4130
+        end_frame: 54325
+        start_s: 34.416667
+        end_s: 452.708333
+      RigidBody06:
+        start_frame: 2034
+        end_frame: 54619
+        start_s: 16.95
+        end_s: 455.158333
+      RigidBody07:
+        start_frame: 5081
+        end_frame: 44613
+        start_s: 42.341667
+        end_s: 371.775
+      Robot01:
+        start_frame: 32097
+        end_frame: 54395
+        start_s: 267.475
+        end_s: 453.291667
+      Robot02:
+        start_frame: 513
+        end_frame: 52052
+        start_s: 4.275
+        end_s: 433.766667
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 7/Take 2026-06-02 03.01.03 PM-4.csv
+        take_name: Take 2026-06-02 03.01.03 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 55272
+        duration_s: 460.59166666666664
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 4631
+            end_frame: 54954
+            start_s: 38.591667
+            end_s: 457.95
+          RigidBody02:
+            start_frame: 3099
+            end_frame: 51402
+            start_s: 25.825
+            end_s: 428.35
+          RigidBody03:
+            start_frame: 1156
+            end_frame: 52625
+            start_s: 9.633333
+            end_s: 438.541667
+          RigidBody04:
+            start_frame: 3682
+            end_frame: 49924
+            start_s: 30.683333
+            end_s: 416.033333
+          RigidBody05:
+            start_frame: 4130
+            end_frame: 54325
+            start_s: 34.416667
+            end_s: 452.708333
+          RigidBody06:
+            start_frame: 2034
+            end_frame: 54619
+            start_s: 16.95
+            end_s: 455.158333
+          RigidBody07:
+            start_frame: 5081
+            end_frame: 44613
+            start_s: 42.341667
+            end_s: 371.775
+          Robot01:
+            start_frame: 32097
+            end_frame: 54395
+            start_s: 267.475
+            end_s: 453.291667
+          Robot02:
+            start_frame: 513
+            end_frame: 52052
+            start_s: 4.275
+            end_s: 433.766667
+      solved:
+        path: data/OptiTrack/solved/session 7/Take 2026-06-02 03.01.03 PM-4.csv
+        take_name: Take 2026-06-02 03.01.03 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 55272
+        duration_s: 460.59166666666664
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          RigidBody02:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          RigidBody04:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          RigidBody05:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          RigidBody06:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          RigidBody07:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          Robot01:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+          Robot02:
+            start_frame: 0
+            end_frame: 55271
+            start_s: 0.0
+            end_s: 460.591667
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-02T15:01:03+03:00'
+        goal_file: data/goals/session 7/log_20260602_145647exp4.csv
+  s8_scenario1:
+    session: 8
+    scenario: 1
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 3188
+        end_frame: 38574
+        start_s: 26.566667
+        end_s: 321.45
+      RigidBody02:
+        start_frame: 264
+        end_frame: 40193
+        start_s: 2.2
+        end_s: 334.941667
+      RigidBody03:
+        start_frame: 2237
+        end_frame: 44767
+        start_s: 18.641667
+        end_s: 373.058333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 8/Take 2026-06-05 03.05.48 PM-1.csv
+        take_name: Take 2026-06-05 03.05.48 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 45134
+        duration_s: 376.10833333333335
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 3188
+            end_frame: 38574
+            start_s: 26.566667
+            end_s: 321.45
+          RigidBody02:
+            start_frame: 264
+            end_frame: 40193
+            start_s: 2.2
+            end_s: 334.941667
+          RigidBody03:
+            start_frame: 2237
+            end_frame: 44767
+            start_s: 18.641667
+            end_s: 373.058333
+      solved:
+        path: data/OptiTrack/solved/session 8/Take 2026-06-05 03.05.48 PM-1.csv
+        take_name: Take 2026-06-05 03.05.48 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 45134
+        duration_s: 376.10833333333335
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 0
+            end_frame: 38574
+            start_s: 0.0
+            end_s: 321.45
+          RigidBody02:
+            start_frame: 264
+            end_frame: 40193
+            start_s: 2.2
+            end_s: 334.941667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 44811
+            start_s: 0.0
+            end_s: 373.425
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-05T15:05:48+03:00'
+        goal_file: data/goals/session 8/log_20260605_142817.csv
+  s8_scenario2:
+    session: 8
+    scenario: 2
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots: []
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 1823
+        end_frame: 43656
+        start_s: 15.191667
+        end_s: 363.8
+      RigidBody02:
+        start_frame: 1151
+        end_frame: 37404
+        start_s: 9.591667
+        end_s: 311.7
+      RigidBody03:
+        start_frame: 356
+        end_frame: 38220
+        start_s: 2.966667
+        end_s: 318.5
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 8/Take 2026-06-05 03.13.56 PM-2.csv
+        take_name: Take 2026-06-05 03.13.56 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 44141
+        duration_s: 367.8333333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1823
+            end_frame: 43656
+            start_s: 15.191667
+            end_s: 363.8
+          RigidBody02:
+            start_frame: 1151
+            end_frame: 37404
+            start_s: 9.591667
+            end_s: 311.7
+          RigidBody03:
+            start_frame: 356
+            end_frame: 38220
+            start_s: 2.966667
+            end_s: 318.5
+      solved:
+        path: data/OptiTrack/solved/session 8/Take 2026-06-05 03.13.56 PM-2.csv
+        take_name: Take 2026-06-05 03.13.56 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 44141
+        duration_s: 367.8333333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 1823
+            end_frame: 43656
+            start_s: 15.191667
+            end_s: 363.8
+          RigidBody02:
+            start_frame: 0
+            end_frame: 37455
+            start_s: 0.0
+            end_s: 312.125
+          RigidBody03:
+            start_frame: 213
+            end_frame: 38350
+            start_s: 1.775
+            end_s: 319.583333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-05T15:13:56+03:00'
+        goal_file: data/goals/session 8/log_20260605_151233.csv
+  s8_scenario3:
+    session: 8
+    scenario: 3
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 439
+        end_frame: 37185
+        start_s: 3.658333
+        end_s: 309.875
+      RigidBody02:
+        start_frame: 1463
+        end_frame: 42616
+        start_s: 12.191667
+        end_s: 355.133333
+      RigidBody03:
+        start_frame: 2350
+        end_frame: 38917
+        start_s: 19.583333
+        end_s: 324.308333
+      Robot01:
+        start_frame: 17
+        end_frame: 43135
+        start_s: 0.141667
+        end_s: 359.458333
+      Robot02:
+        start_frame: 19
+        end_frame: 43132
+        start_s: 0.158333
+        end_s: 359.433333
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 8/Take 2026-06-05 03.24.23 PM-3.csv
+        take_name: Take 2026-06-05 03.24.23 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 43136
+        duration_s: 359.4583333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 439
+            end_frame: 37185
+            start_s: 3.658333
+            end_s: 309.875
+          RigidBody02:
+            start_frame: 1463
+            end_frame: 42616
+            start_s: 12.191667
+            end_s: 355.133333
+          RigidBody03:
+            start_frame: 2350
+            end_frame: 38917
+            start_s: 19.583333
+            end_s: 324.308333
+          Robot01:
+            start_frame: 17
+            end_frame: 43135
+            start_s: 0.141667
+            end_s: 359.458333
+          Robot02:
+            start_frame: 19
+            end_frame: 43132
+            start_s: 0.158333
+            end_s: 359.433333
+      solved:
+        path: data/OptiTrack/solved/session 8/Take 2026-06-05 03.24.23 PM-3.csv
+        take_name: Take 2026-06-05 03.24.23 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 43136
+        duration_s: 359.4583333333333
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 417
+            end_frame: 37185
+            start_s: 3.475
+            end_s: 309.875
+          RigidBody02:
+            start_frame: 1463
+            end_frame: 42618
+            start_s: 12.191667
+            end_s: 355.15
+          RigidBody03:
+            start_frame: 0
+            end_frame: 38917
+            start_s: 0.0
+            end_s: 324.308333
+          Robot01:
+            start_frame: 0
+            end_frame: 43135
+            start_s: 0.0
+            end_s: 359.458333
+          Robot02:
+            start_frame: 0
+            end_frame: 43135
+            start_s: 0.0
+            end_s: 359.458333
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-05T15:24:23+03:00'
+        goal_file: data/goals/session 8/log_20260605_152039.csv
+  s8_scenario4:
+    session: 8
+    scenario: 4
+    density: low
+    humans:
+    - RigidBody01
+    - RigidBody02
+    - RigidBody03
+    robots:
+    - Robot01
+    - Robot02
+    analysis_body_bounds:
+      RigidBody01:
+        start_frame: 2074
+        end_frame: 35742
+        start_s: 17.283333
+        end_s: 297.85
+      RigidBody02:
+        start_frame: 315
+        end_frame: 44332
+        start_s: 2.625
+        end_s: 369.433333
+      RigidBody03:
+        start_frame: 1253
+        end_frame: 49840
+        start_s: 10.441667
+        end_s: 415.333333
+      Robot01:
+        start_frame: 819
+        end_frame: 49843
+        start_s: 6.825
+        end_s: 415.358333
+      Robot02:
+        start_frame: 17
+        end_frame: 50505
+        start_s: 0.141667
+        end_s: 420.875
+    analysis_bounds_provenance: raw OptiTrack visibility, x > waiting_area_x, runs
+      >= 30 frames
+    sources:
+      raw:
+        path: data/OptiTrack/raw/session 8/Take 2026-06-05 03.37.35 PM-4.csv
+        take_name: Take 2026-06-05 03.37.35 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 50506
+        duration_s: 420.875
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2074
+            end_frame: 35742
+            start_s: 17.283333
+            end_s: 297.85
+          RigidBody02:
+            start_frame: 315
+            end_frame: 44332
+            start_s: 2.625
+            end_s: 369.433333
+          RigidBody03:
+            start_frame: 1253
+            end_frame: 49840
+            start_s: 10.441667
+            end_s: 415.333333
+          Robot01:
+            start_frame: 819
+            end_frame: 49843
+            start_s: 6.825
+            end_s: 415.358333
+          Robot02:
+            start_frame: 17
+            end_frame: 50505
+            start_s: 0.141667
+            end_s: 420.875
+      solved:
+        path: data/OptiTrack/solved/session 8/Take 2026-06-05 03.37.35 PM-4.csv
+        take_name: Take 2026-06-05 03.37.35 PM
+        capture_fps: 120.0
+        export_fps: 120.0
+        total_frames: 50506
+        duration_s: 420.875
+        coordinate_space: Global
+        length_units: Meters
+        body_bounds:
+          RigidBody01:
+            start_frame: 2074
+            end_frame: 35770
+            start_s: 17.283333
+            end_s: 298.083333
+          RigidBody02:
+            start_frame: 315
+            end_frame: 44375
+            start_s: 2.625
+            end_s: 369.791667
+          RigidBody03:
+            start_frame: 0
+            end_frame: 49840
+            start_s: 0.0
+            end_s: 415.333333
+          Robot01:
+            start_frame: 0
+            end_frame: 50505
+            start_s: 0.0
+            end_s: 420.875
+          Robot02:
+            start_frame: 0
+            end_frame: 50505
+            start_s: 0.0
+            end_s: 420.875
+    temporal_alignment:
+      goal_to_optitrack:
+        accepted: true
+        corrected_optitrack_start: '2026-06-05T15:37:35+03:00'
+        goal_file: data/goals/session 8/log_20260605_153356.csv
