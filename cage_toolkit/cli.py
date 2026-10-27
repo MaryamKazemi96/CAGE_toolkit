@@ -11,6 +11,7 @@ import pandas as pd
 from .metadata import DEFAULT_METADATA, build_metadata
 from .metrics import recording_metrics
 from .plotting import draw_trajectory, goal_assignment_figure, save_figure, trajectory_figure
+from .prediction import PredictionConfig, run_prediction_comparison
 from .recording import CAGEDataset
 from .ros import (
     export_amcl_pose,
@@ -90,6 +91,24 @@ def build_parser() -> argparse.ArgumentParser:
     _add_recording_arguments(metric)
     metric.add_argument("--output", type=Path, required=True)
 
+    prediction = commands.add_parser(
+        "prediction",
+        help="Benchmark goal-conditioned and goal-agnostic trajectory baselines",
+    )
+    prediction_commands = prediction.add_subparsers(dest="prediction_command", required=True)
+    compare = prediction_commands.add_parser(
+        "compare",
+        help="Evaluate constant-velocity and assigned-goal baselines",
+    )
+    compare.add_argument("--output", type=Path, default=Path("results/prediction_comparison"))
+    compare.add_argument("--horizons", type=float, nargs="+", default=[1.0, 2.0, 3.0, 4.0, 5.0])
+    compare.add_argument(
+        "--history",
+        type=float,
+        default=0.5,
+        help="Observed history used for speed and direction [s]",
+    )
+
     spatial = commands.add_parser("spatial", help="Apply the validated ROS map to OptiTrack transform")
     spatial_commands = spatial.add_subparsers(dest="spatial_command", required=True)
     transform = spatial_commands.add_parser("transform-csv", help="Transform exported /amcl_pose x/y columns; bags remain unchanged")
@@ -161,6 +180,14 @@ def main(argv: list[str] | None = None) -> None:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         result.to_csv(args.output, index=False)
         print(result.to_string(index=False))
+    elif args.command == "prediction":
+        result = run_prediction_comparison(
+            dataset,
+            root / args.output,
+            PredictionConfig(horizons_s=tuple(args.horizons), history_s=args.history),
+        )
+        print(result.to_string(index=False))
+        print(f"Saved prediction-comparison tables and figures to {root / args.output}")
     elif args.command == "spatial":
         if args.spatial_command == "transform-csv":
             transform_pose_csv(args.input, args.output, dataset.spatial_transform())

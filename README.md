@@ -52,6 +52,10 @@ cage --root . paper-figures --session 2
 
 # Compact, reproducible survey cleaning and density summary.
 cage --root . survey
+
+# Compare transparent trajectory-only and assigned-goal prediction baselines.
+# This uses trimmed solved trajectories and writes tables plus figures.
+cage --root . prediction compare --output results/prediction_comparison
 ```
 
 For development without installation, prefix commands with
@@ -77,6 +81,21 @@ cage --root /path/to/CAGE metadata build
 ```
 
 This command reads data but never edits CSV, TAK, bag, map, or goal-log files.
+
+## Goal-conditioned prediction baseline
+
+The prediction command is a transparent, non-learning benchmark for the
+released goal annotations. Its goal-agnostic baseline extrapolates constant
+velocity estimated from the preceding 0.5 s. The goal-conditioned baseline
+uses that same speed but directs it to the centroid of the newly assigned
+station region. It evaluates only continuous tracking windows with no new
+assignment during the forecast horizon.
+
+Goal labels record assignments, not measured arrivals. The benchmark uses
+trimmed solved trajectories, so solved positions are normalized to the arena
+plane and restricted to the metadata's cached raw-visibility bounds. It writes
+per-event errors, horizon/density/scenario summaries, and diagnostic figures
+to the selected output directory.
 
 ## Time and coordinate conventions
 
